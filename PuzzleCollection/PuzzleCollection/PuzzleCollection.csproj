@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D2AAB544-8DE5-4B71-8050-3B7DD58179C3}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PuzzleCollection</RootNamespace>
+    <AssemblyName>PuzzleCollection</AssemblyName>
+    <DefaultLanguage>en</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>PuzzleCollection_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <PackageCertificateThumbprint>247B56671308D2308FA4B0D74D3450B8310BD314</PackageCertificateThumbprint>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <TargetFrameworkVersion />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="AboutPane.xaml.cs">
+      <DependentUpon>AboutPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CommonDX\DeviceManager.cs" />
+    <Compile Include="CommonDX\FpsRenderer.cs" />
+    <Compile Include="CommonDX\SurfaceImageSourceTarget.cs" />
+    <Compile Include="CommonDX\TargetBase.cs" />
+    <Compile Include="Common\ActionCommand.cs" />
+    <Compile Include="GameSettingsManager.cs" />
+    <Compile Include="GameStateManager.cs" />
+    <Compile Include="GameCollection.cs" />
+    <Compile Include="GameInfo.cs" />
+    <Compile Include="GameSurfaceControl.cs" />
+    <Compile Include="Games\ArrayExtensions.cs" />
+    <Compile Include="Games\Bridges\BridgesDrawState.cs" />
+    <Compile Include="Games\Bridges\BridgesGame.cs" />
+    <Compile Include="Games\Bridges\BridgesIsland.cs" />
+    <Compile Include="Games\Bridges\BridgesMove.cs" />
+    <Compile Include="Games\Bridges\BridgesMovePoint.cs" />
+    <Compile Include="Games\Bridges\BridgesMoveType.cs" />
+    <Compile Include="Games\Bridges\BridgesPoint.cs" />
+    <Compile Include="Games\Bridges\BridgesSettings.cs" />
+    <Compile Include="Games\Bridges\BridgesSolverState.cs" />
+    <Compile Include="Games\Bridges\BridgesState.cs" />
+    <Compile Include="Games\Bridges\BridgesSurrounds.cs" />
+    <Compile Include="Games\Bridges\BridgesUI.cs" />
+    <Compile Include="Games\Buttons.cs" />
+    <Compile Include="Games\Combi.cs" />
+    <Compile Include="Games\Drawing.cs" />
+    <Compile Include="Games\Dsf.cs" />
+    <Compile Include="Games\Frontend.cs" />
+    <Compile Include="Games\GameBase.cs" />
+    <Compile Include="Games\GameController.cs" />
+    <Compile Include="Games\GamePresetSettings.cs" />
+    <Compile Include="Games\GameSave.cs" />
+    <Compile Include="Games\IGame.cs" />
+    <Compile Include="Games\IGameController.cs" />
+    <Compile Include="Games\Lightup\LightupDrawState.cs" />
+    <Compile Include="Games\Lightup\LightupGame.cs" />
+    <Compile Include="Games\Lightup\LightupMove.cs" />
+    <Compile Include="Games\Net\NetMovePoint.cs" />
+    <Compile Include="Games\Lightup\LightupPoint.cs" />
+    <Compile Include="Games\Lightup\LightupSettings.cs" />
+    <Compile Include="Games\Lightup\LightupState.cs" />
+    <Compile Include="Games\Lightup\LightupSurrounds.cs" />
+    <Compile Include="Games\Lightup\LightupUI.cs" />
+    <Compile Include="Games\Lightup\LlData.cs" />
+    <Compile Include="Games\Map\MapData.cs" />
+    <Compile Include="Games\Map\MapDrawState.cs" />
+    <Compile Include="Games\Map\MapGame.cs" />
+    <Compile Include="Games\Map\MapMove.cs" />
+    <Compile Include="Games\Map\MapSettings.cs" />
+    <Compile Include="Games\Map\MapState.cs" />
+    <Compile Include="Games\Map\MapUI.cs" />
+    <Compile Include="Games\Misc.cs" />
+    <Compile Include="Games\MoveBase.cs" />
+    <Compile Include="Games\Net\NetDrawState.cs" />
+    <Compile Include="Games\Net\NetGame.cs" />
+    <Compile Include="Games\Net\NetMove.cs" />
+    <Compile Include="Games\Net\NetPoint.cs" />
+    <Compile Include="Games\Net\NetSettings.cs" />
+    <Compile Include="Games\Net\NetState.cs" />
+    <Compile Include="Games\Net\NetUI.cs" />
+    <Compile Include="Games\OriginalRandom.cs" />
+    <Compile Include="Games\Pattern\PatternDrawState.cs" />
+    <Compile Include="Games\Pattern\PatternGame.cs" />
+    <Compile Include="Games\Pattern\PatternMove.cs" />
+    <Compile Include="Games\Pattern\PatternSettings.cs" />
+    <Compile Include="Games\Pattern\PatternState.cs" />
+    <Compile Include="Games\Pattern\PatternUI.cs" />
+    <Compile Include="GameCollectionPage.xaml.cs">
+      <DependentUpon>GameCollectionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\SameGame\SameGameDrawState.cs" />
+    <Compile Include="Games\SameGame\SameGameGame.cs" />
+    <Compile Include="Games\SameGame\SameGameMove.cs" />
+    <Compile Include="Games\SameGame\SameGameSettings.cs" />
+    <Compile Include="Games\SameGame\SameGameState.cs" />
+    <Compile Include="Games\SameGame\SameGameUI.cs" />
+    <Compile Include="Games\SettingsBase.cs" />
+    <Compile Include="Games\SHA.cs" />
+    <Compile Include="Games\SignPost\SignPostDir.cs" />
+    <Compile Include="Games\SignPost\SignPostDrawState.cs" />
+    <Compile Include="Games\SignPost\SignPostGame.cs" />
+    <Compile Include="Games\SignPost\SignPostMove.cs" />
+    <Compile Include="Games\SignPost\SignPostMoveType.cs" />
+    <Compile Include="Games\SignPost\SignPostSettings.cs" />
+    <Compile Include="Games\SignPost\SignPostState.cs" />
+    <Compile Include="Games\SignPost\SignPostUI.cs" />
+    <Compile Include="Games\Slant\SlantClues.cs" />
+    <Compile Include="Games\Slant\SlantDrawState.cs" />
+    <Compile Include="Games\Slant\SlantGame.cs" />
+    <Compile Include="Games\Slant\SlantMove.cs" />
+    <Compile Include="Games\Slant\SlantMovePoint.cs" />
+    <Compile Include="Games\Slant\SlantNeighbours.cs" />
+    <Compile Include="Games\Slant\SlantSettings.cs" />
+    <Compile Include="Games\Slant\SlantSolverScratch.cs" />
+    <Compile Include="Games\Slant\SlantState.cs" />
+    <Compile Include="Games\Slant\SlantUI.cs" />
+    <Compile Include="Games\StateBase.cs" />
+    <Compile Include="Games\Structures\Node234.cs" />
+    <Compile Include="Games\Structures\Rel234.cs" />
+    <Compile Include="Games\Structures\Tree234.cs" />
+    <Compile Include="GameHelp.xaml.cs">
+      <DependentUpon>GameHelp.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Games\UIBase.cs" />
+    <Compile Include="Games\Untangle\UntangleDrawState.cs" />
+    <Compile Include="Games\Untangle\UntangleEdge.cs" />
+    <Compile Include="Games\Untangle\UntangleGame.cs" />
+    <Compile Include="Games\Untangle\UntangleGraph.cs" />
+    <Compile Include="Games\Untangle\UntangleMove.cs" />
+    <Compile Include="Games\Untangle\UntangleMovePoint.cs" />
+    <Compile Include="Games\Untangle\UntanglePoint.cs" />
+    <Compile Include="Games\Untangle\UntangleSettings.cs" />
+    <Compile Include="Games\Untangle\UntangleState.cs" />
+    <Compile Include="Games\Untangle\UntangleUI.cs" />
+    <Compile Include="Games\Untangle\UntangleVertex.cs" />
+    <Compile Include="HelpPane.xaml.cs">
+      <DependentUpon>HelpPane.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Common\BindableBase.cs" />
+    <Compile Include="Common\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Common\BooleanNegationConverter.cs" />
+    <Compile Include="Common\LayoutAwarePage.cs" />
+    <Compile Include="Common\RichTextColumns.cs" />
+    <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="Labels.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="packages.config" />
+    <PRIResource Include="Resources\fr\Resources.resw" />
+    <PRIResource Include="Resources\en\Resources.resw">
+      <SubType>Designer</SubType>
+    </PRIResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\SignPostPreview.png" />
+    <Content Include="Assets\SlantPreview.png" />
+    <Content Include="Assets\UntanglePreview.png" />
+    <None Include="Package.StoreAssociation.xml" />
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="AboutPane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Content Include="Assets\BridgesPreview.png" />
+    <Content Include="Assets\LightupPreview.png" />
+    <Content Include="Assets\Logo.png" />
+    <Content Include="Assets\MapPreview.png" />
+    <Content Include="Assets\NetPreview.png" />
+    <Content Include="Assets\PatternPreview.png" />
+    <Content Include="Assets\SameGamePreview.png" />
+    <Content Include="Assets\SmallLogo.png" />
+    <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\LightGray.png" />
+    <Content Include="Assets\MediumGray.png" />
+    <Content Include="Assets\DarkGray.png" />
+    <Page Include="GameHelp.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="HelpPane.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\StandardStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GameCollectionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GamePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Callisto">
+      <HintPath>..\packages\Callisto.1.3.1\lib\winrt45\Callisto.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX">
+      <HintPath>..\packages\SharpDX.2.5.0\lib\win8\SharpDX.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct2D1">
+      <HintPath>..\packages\SharpDX.Direct2D1.2.5.0\lib\win8\SharpDX.Direct2D1.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.Direct3D11">
+      <HintPath>..\packages\SharpDX.Direct3D11.2.5.0\lib\win8\SharpDX.Direct3D11.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpDX.DXGI">
+      <HintPath>..\packages\SharpDX.DXGI.2.5.0\lib\win8\SharpDX.DXGI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AboutBased.Text" xml:space="preserve">
+    <value>Based on Simon Tatham's Portable Puzzle Collection (r10035).</value>
+  </data>
+  <data name="AboutFeatureRequest.Text" xml:space="preserve">
+    <value>Feel free to request features, improvements, or port of puzzles from Simon Tatham's Collection on the project's codeplex issues list.</value>
+  </data>
+  <data name="AboutOpenSource.Text" xml:space="preserve">
+    <value>This software is open source under the MIT license (same terms as Simon Tatham's Portable Puzzle Collection below).</value>
+  </data>
+  <data name="ActionNewGame.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>New game</value>
+  </data>
+  <data name="ActionRestartGame.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="BridgesDescription" xml:space="preserve">
+    <value>Connect all the islands with a network of bridges.</value>
+  </data>
+  <data name="BridgesTitle" xml:space="preserve">
+    <value>Bridges</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Commands.Text" xml:space="preserve">
+    <value>Commands</value>
+  </data>
+  <data name="ContactPage.Text" xml:space="preserve">
+    <value>E-mail (puzzles8@outlook.fr)</value>
+  </data>
+  <data name="Difficulty.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>Easy</value>
+  </data>
+  <data name="GameCompletedPrompt" xml:space="preserve">
+    <value>Game completed. What would you like to do?</value>
+  </data>
+  <data name="GameCompletedTilte" xml:space="preserve">
+    <value>Congratulation !</value>
+  </data>
+  <data name="GameGoal.Text" xml:space="preserve">
+    <value>Game goal</value>
+  </data>
+  <data name="GameHelp.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>How to play?</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Hard</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="HelpBridgesCredits" xml:space="preserve">
+    <value>Bridges was contributed to the original collection by James Harvey. Credit for this puzzle goes to Nikoli (http://www.nikoli.co.jp/puzzles/32/index-e.htm).</value>
+  </data>
+  <data name="HelpBridgesGoal" xml:space="preserve">
+    <value>You have a set of islands distributed across the playing area. Each island contains a number. Your aim is to connect the islands together with bridges, in such a way that: 
+• Bridges run horizontally or vertically. 
+• The number of bridges terminating at any island is equal to the number written in that island. 
+• Two bridges may run in parallel between the same two islands, but no more than two may do so. 
+• No bridge crosses another bridge. 
+• All the islands are connected together.</value>
+  </data>
+  <data name="HelpBridgesMouseCommands" xml:space="preserve">
+    <value>To place a bridge between two islands, click the mouse down on one island and drag it towards the other. You do not need to drag all the way to the other island; you only need to move the mouse far enough for the intended bridge direction to be unambiguous. Doing this again when a bridge is already present will add another parallel bridge. If there are already as many bridges between the two islands as permitted by the current game rules (i.e. two by default), the same dragging action will remove all of them. 
+
+If you want to remind yourself that two islands definitely do not have a bridge between them, you can right-drag between them in the same way to draw a ‘non-bridge’ marker. 
+
+If you think you have finished with an island (i.e. you have placed all its bridges and are confident that they are in the right places), you can mark the island as finished by left-clicking on it. This will highlight it and all the bridges connected to it, and you will be prevented from accidentally modifying any of those bridges in future. Left-clicking again on a highlighted island will unmark it and restore your ability to modify it.</value>
+  </data>
+  <data name="HelpBridgesTouchCommands" xml:space="preserve">
+    <value>To place a bridge between two islands, press on one island and slide towards the other. You do not need to slide all the way to the other island; you only need to move your finger far enough for the intended bridge direction to be unambiguous. Doing this again when a bridge is already present will add another parallel bridge. If there are already as many bridges between the two islands as permitted by the current game rules (i.e. two by default), the same dragging action will remove all of them. 
+
+If you think you have finished with an island (i.e. you have placed all its bridges and are confident that they are in the right places), you can mark the island as finished by tapping on it. This will highlight it and all the bridges connected to it, and you will be prevented from accidentally modifying any of those bridges in future. Tapping again on a highlighted island will unmark it and restore your ability to modify it.</value>
+  </data>
+  <data name="HelpCommands.Text" xml:space="preserve">
+    <value>General commands</value>
+  </data>
+  <data name="HelpCommandsAppBar.Text" xml:space="preserve">
+    <value>In the application bar (display the bar with a mouse right click  outside the game plane, or with a touch screen, swipe up from the bottom of the screen), you can restart the game (undo all moves), start a new game, change difficulty/size, or get help on the current game.</value>
+  </data>
+  <data name="HelpCommandsIntro.Text" xml:space="preserve">
+    <value>All games have same command buttons.</value>
+  </data>
+  <data name="HelpCommandsUndoRedo.Text" xml:space="preserve">
+    <value>You can undo (or redo) your last move using the undo (ou redo) button at the right of the game plane.</value>
+  </data>
+  <data name="HelpCredits.Text" xml:space="preserve">
+    <value>Credits</value>
+  </data>
+  <data name="HelpGamesList.Text" xml:space="preserve">
+    <value>Games help</value>
+  </data>
+  <data name="HelpHomePage.Text" xml:space="preserve">
+    <value>To start a new game, choose game type on the first screen.</value>
+  </data>
+  <data name="HelpLightupCredits" xml:space="preserve">
+    <value>Light Up was contributed to the original collection by James Harvey. Credit for this puzzle goes to Nikoli (http://www.nikoli.co.jp/puzzles/32/index-e.htm).</value>
+  </data>
+  <data name="HelpLightupGoal" xml:space="preserve">
+    <value>You have a grid of squares. Some are filled in black; some of the black squares are numbered. Your aim is to ‘light up’ all the empty squares by placing light bulbs in some of them. Each light bulb illuminates the square it is on, plus all squares in line with it horizontally or vertically unless a black square is blocking the way.
+
+To win the game, you must satisfy the following conditions:
+• All non-black squares are lit.
+• No light is lit by another light.
+• All numbered black squares have exactly that number of lights adjacent to them (in the four squares above, below, and to the side).
+
+Non-numbered black squares may have any number of lights adjacent to them.</value>
+  </data>
+  <data name="HelpLightupMouseCommands" xml:space="preserve">
+    <value>Left-clicking in a non-black square will toggle the presence of a light in that square. Right-clicking in a non-black square toggles a mark there to aid solving; it can be used to highlight squares that cannot be lit, for example. 
+You may not place a light in a marked square, nor place a mark in a lit square.</value>
+  </data>
+  <data name="HelpLightupTouchCommands" xml:space="preserve">
+    <value>Tap on a non black square to place a light or to mark a square. First tap places the light, second tap marks the square, third tap clears the square. Marks can be used to highlight squares that cannot be lit, for example.</value>
+  </data>
+  <data name="HelpMapCredits" xml:space="preserve">
+    <value>Game by Simon Tatham. The concept of a four-colouring puzzle was suggested by Owen Dunn; credit must also go to Nikoli and to Verity Allan for inspiring the train of thought that led to realise Owen's suggestion was a viable puzzle. Thanks also to Gareth Taylor for many detailed suggestions.</value>
+  </data>
+  <data name="HelpMapGoal" xml:space="preserve">
+    <value>You are given a map consisting of a number of regions. Your task is to colour each region with one of four colours, in such a way that no two regions sharing a boundary have the same colour. You are provided with some regions already coloured, sufficient to make the remainder of the solution unique. 
+
+Only regions which share a length of border are required to be different colours. Two regions which meet at only one point (i.e. are diagonally separated) may be the same colour.</value>
+  </data>
+  <data name="HelpMapMouseCommands" xml:space="preserve">
+    <value>To colour a region, click the left mouse button on an existing region of the desired colour and drag that colour into the new region. 
+
+If you need to clear a region, you can drag from an empty region, or from the puzzle boundary if there are no empty regions left. 
+
+Dragging a colour using the right mouse button will stipple the region in that colour, which you can use as a note to yourself that you think the region might be that colour. A region can contain stipples in multiple colours at once. (This is often useful at the harder difficulty levels.)</value>
+  </data>
+  <data name="HelpMapTouchCommands" xml:space="preserve">
+    <value>To colour a region, press on an existing region of the desired colour and drag that colour into the new region. 
+
+If you need to clear a region, you can drag from an empty region, or from the puzzle boundary if there are no empty regions left.</value>
+  </data>
+  <data name="HelpMouseCommands.Text" xml:space="preserve">
+    <value>Play with a mouse</value>
+  </data>
+  <data name="HelpNetCredits" xml:space="preserve">
+    <value>Game by Simon Tatham. First sawn in the form of a Flash game called FreeNet (http://www.jurjans.lv/stuff/net/FreeNet.htm), written by Pavils Jurjans.</value>
+  </data>
+  <data name="HelpNetGoal" xml:space="preserve">
+    <value>The computer prepares a network by connecting up the centres of squares in a grid, and then shuffles the network by rotating every tile randomly. Your job is to rotate it all back into place. The successful solution will be an entirely connected network, with no closed loops. As a visual aid, all tiles which are connected to the one in the middle are highlighted.</value>
+  </data>
+  <data name="HelpNetMouseCommands" xml:space="preserve">
+    <value>Left-click on a tile to rotate it anticlockwise. Right-click on a tile to rotate it clockwise.
+If you're sure of a tile orientation, you can middle-click, or hold down Shift while clicking with any button, to lock in order to not accidentally turn it. Repeat operation to unlock it.</value>
+  </data>
+  <data name="HelpNetTouchCommands" xml:space="preserve">
+    <value>Tap on a tile to rotate it anticlockwise.</value>
+  </data>
+  <data name="HelpPatternCredits" xml:space="preserve">
+    <value>Game by Simon Tatham.</value>
+  </data>
+  <data name="HelpPatternGoal" xml:space="preserve">
+    <value>You have a grid of squares, which must all be filled in either black or white. Beside each row of the grid are listed the lengths of the runs of black squares on that row; above each column are listed the lengths of the runs of black squares in that column. Your aim is to fill in the entire grid black or white.</value>
+  </data>
+  <data name="HelpPatternMouseCommands" xml:space="preserve">
+    <value>Left-click in a square to colour it black. Right-click to colour it white. If you make a mistake, you can middle-click, or hold down Shift while clicking with any button, to colour the square in the default grey (meaning ‘undecided’) again. You can click and drag with the left or right mouse button to colour a vertical or horizontal line of squares black or white at a time (respectively). If you click and drag with the middle button, or with Shift held down, you can colour a whole rectangle of squares grey.</value>
+  </data>
+  <data name="HelpPatternTouchCommands" xml:space="preserve">
+    <value>Tap on a square to change its colour. First tap will colour it black, second tap will colour it white, third tap will colour it default grey (meaning ‘undecided’).</value>
+  </data>
+  <data name="HelpSameGameCredits" xml:space="preserve">
+    <value>Same Game was contributed to the original collection by James Harvey.</value>
+  </data>
+  <data name="HelpSameGameGoal" xml:space="preserve">
+    <value>You have a grid of coloured squares, which you have to clear by highlighting contiguous regions of more than one coloured square; the larger the region you highlight, the more points you get (and the faster you clear the arena). If you clear the grid you win. If you end up with nothing but single squares (i.e., there are no more clickable regions left) you lose. Removing a region causes the rest of the grid to shuffle up: blocks that are suspended will fall down (first), and then empty columns are filled from the right.</value>
+  </data>
+  <data name="HelpSameGameMouseCommands" xml:space="preserve">
+    <value>If you left-click an unselected region, it becomes selected (possibly clearing the current selection). If you left-click the selected region, it will be removed (and the rest of the grid shuffled immediately). If you right-click the selected region, it will be unselected.</value>
+  </data>
+  <data name="HelpSameGameTouchCommands" xml:space="preserve">
+    <value>If you tap an unselected region, it becomes selected (possibly clearing the current selection). If you tap the selected region, it will be removed (and the rest of the grid shuffled immediately).</value>
+  </data>
+  <data name="HelpSignPostCredits" xml:space="preserve">
+    <value>Signpost was contributed to the original collection by James Harvey. Credit for this puzzle goes to Janko (http://janko.at/Raetsel/Pfeilpfad/index.htm), who call it ‘Pfeilpfad’ (‘arrow path’).</value>
+  </data>
+  <data name="HelpSignPostGoal" xml:space="preserve">
+    <value>You have a grid of squares; each square (except the last one) contains an arrow, and some squares also contain numbers. Your job is to connect the squares to form a continuous list of numbers starting at 1 and linked in the direction of the arrows – so the arrow inside the square with the number 1 will point to the square containing the number 2, which will point to the square containing the number 3, etc. Each square can be any distance away from the previous one, as long as it is somewhere in the direction of the arrow. By convention the first and last numbers are shown; one or more interim numbers may also appear at the beginning.
+
+If you connect together two squares and one of them has a number in it, the appropriate number will appear in the other square. If you connect two non-numbered squares, they will be assigned temporary algebraic labels: on the first occasion, they will be labelled ‘a’ and ‘a+1’, and then ‘b’ and ‘b+1’, and so on. Connecting more squares on to the ends of such a chain will cause them all to be labelled with the same letter. 
+
+The arrow in each square starts off black, and goes grey once you connect the square to its successor. Also, each square which needs a predecessor has a small dot in the bottom left corner, which vanishes once you link a square to it. So your aim is always to connect a square with a black arrow to a square with a dot.</value>
+  </data>
+  <data name="HelpSignPostMouseCommands" xml:space="preserve">
+    <value>To play Signpost, you connect squares together by dragging from one square to another, indicating that they are adjacent in the sequence. Drag with the left button from a square to its successor, or with the right button from a square to its predecessor. When you left-click or right-click in a square, the legal squares to connect it to will be shown. To remove any links for a particular square (both incoming and outgoing), left-drag it off the grid. To remove a whole chain, right-drag any square in the chain off the grid. </value>
+  </data>
+  <data name="HelpSignPostTouchCommands" xml:space="preserve">
+    <value>To play Signpost, you connect squares together by dragging from one square to another, indicating that they are adjacent in the sequence. Drag from a square to its successor, or hold few seconds and drag from a square to its predecessor. When you drag in a square, the legal squares to connect it to will be shown. To remove any links for a particular square (both incoming and outgoing), drag it off the grid. To remove a whole chain, hold few seconds and drag any square in the chain off the grid.</value>
+  </data>
+  <data name="HelpSlantCredits" xml:space="preserve">
+    <value>Game by Simon Tatham. Credit for this puzzle goes to Nikoli (http://www.nikoli.co.jp/puzzles/39/index.htm ; in Japanese)</value>
+  </data>
+  <data name="HelpSlantGoal" xml:space="preserve">
+    <value>You have a grid of squares. Your aim is to draw a diagonal line through each square, and choose which way each line slants so that the following conditions are met: 
+• The diagonal lines never form a loop. 
+• Any point with a circled number has precisely that many lines meeting at it. (Thus, a 4 is the centre of a cross shape, whereas a zero is the centre of a diamond shape – or rather, a partial diamond shape, because a zero can never appear in the middle of the grid because that would immediately cause a loop.)</value>
+  </data>
+  <data name="HelpSlantMouseCommands" xml:space="preserve">
+    <value>Left-clicking in a blank square will place a \ in it (a line leaning to the left, i.e. running from the top left of the square to the bottom right). Right-clicking in a blank square will place a / in it (leaning to the right, running from top right to bottom left). Continuing to click either button will cycle between the three possible square contents. Thus, if you left-click repeatedly in a blank square it will change from blank to \ to / back to blank, and if you right-click repeatedly the square will change from blank to / to \ back to blank. (Therefore, you can play the game entirely with one button if you need to.)</value>
+  </data>
+  <data name="HelpSlantTouchCommands" xml:space="preserve">
+    <value>Tap on a blank square to place a \ in it (line running from the top left of the square to the bottom right), tap again on the square to place a / in it (line running from top right to bottom left), tap a third time to clear the square.</value>
+  </data>
+  <data name="HelpSource.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="HelpSupport.Text" xml:space="preserve">
+    <value>Support / Improvement suggestion</value>
+  </data>
+  <data name="HelpSupportText.Text" xml:space="preserve">
+    <value>If you a problem using this game collection, or if you have any suggestion, please contact me be e-mail, or directlty add an issue to the project page.</value>
+  </data>
+  <data name="HelpTouchCommands.Text" xml:space="preserve">
+    <value>Play on a touch screen</value>
+  </data>
+  <data name="HelpUntangleCredits" xml:space="preserve">
+    <value>Game by Simon Tatham. Sawn in the form of a Flash game called Planarity (http://home.cwru.edu/~jnt5/Planarity), written by John Tantalo.</value>
+  </data>
+  <data name="HelpUntangleGoal" xml:space="preserve">
+    <value>You are given a number of points, some of which have lines drawn between them. You can move the points about arbitrarily; your aim is to position the points so that no line crosses another.</value>
+  </data>
+  <data name="HelpUntangleMouseCommands" xml:space="preserve">
+    <value>To move a point, click on it with the left mouse button and drag it into a new position.</value>
+  </data>
+  <data name="HelpUntangleTouchCommands" xml:space="preserve">
+    <value>To move a point, press it and drag it into a new position.</value>
+  </data>
+  <data name="IssuesPage.Text" xml:space="preserve">
+    <value>Issues list (codeplex.com)</value>
+  </data>
+  <data name="LightupDescription" xml:space="preserve">
+    <value>Place bulbs to light up all the squares.</value>
+  </data>
+  <data name="LightupTitle" xml:space="preserve">
+    <value>Lightup</value>
+  </data>
+  <data name="MapDescription" xml:space="preserve">
+    <value>Colour the map so that adjacent regions are never the same colour.</value>
+  </data>
+  <data name="MapTitle" xml:space="preserve">
+    <value>Map</value>
+  </data>
+  <data name="NetDescription" xml:space="preserve">
+    <value>Rotate each tile to reassemble the network.</value>
+  </data>
+  <data name="NetTitle" xml:space="preserve">
+    <value>Net</value>
+  </data>
+  <data name="NewGame" xml:space="preserve">
+    <value>New game</value>
+  </data>
+  <data name="NewGamePrompt" xml:space="preserve">
+    <value>Current game will be lost, are you sure ?</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="PatternDescription" xml:space="preserve">
+    <value>Fill in the pattern in the grid, given only the lengths of runs of black squares.</value>
+  </data>
+  <data name="PatternTitle" xml:space="preserve">
+    <value>Pattern</value>
+  </data>
+  <data name="Redo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Redo</value>
+  </data>
+  <data name="RestartGame" xml:space="preserve">
+    <value>Restart game</value>
+  </data>
+  <data name="RestartPrompt" xml:space="preserve">
+    <value>Your progression will be lost. You will not be able to undo this action, are you sure ?</value>
+  </data>
+  <data name="SameGameDescription" xml:space="preserve">
+    <value>Clear the grid by removing touching groups of the same colour squares.</value>
+  </data>
+  <data name="SameGameTitle" xml:space="preserve">
+    <value>Same Game</value>
+  </data>
+  <data name="SignPostDescription" xml:space="preserve">
+    <value>Connect the squares into a path following the arrows.</value>
+  </data>
+  <data name="SignPostTitle" xml:space="preserve">
+    <value>Signpost</value>
+  </data>
+  <data name="SlantDescription" xml:space="preserve">
+    <value>Draw a maze of slanting lines that matches the clues.</value>
+  </data>
+  <data name="SlantTitle" xml:space="preserve">
+    <value>Slant</value>
+  </data>
+  <data name="Tricky" xml:space="preserve">
+    <value>Tricky</value>
+  </data>
+  <data name="Undo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Unknown</value>
+  </data>
+  <data name="Unreasonable" xml:space="preserve">
+    <value>Unreasonable</value>
+  </data>
+  <data name="UntangleDescription" xml:space="preserve">
+    <value>Reposition the points so that the lines do not cross.</value>
+  </data>
+  <data name="UntangleTitle" xml:space="preserve">
+    <value>Untangle</value>
+  </data>
+</root>

@@ -1,0 +1,115 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="PuzzleCollection.GamePage"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PuzzleCollection"
+    xmlns:common="using:PuzzleCollection.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.BottomAppBar>
+        <AppBar>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+                <StackPanel Orientation="Horizontal" Grid.Column="0">
+                    <Button Style="{StaticResource SkipBackAppBarButtonStyle}" AutomationProperties.AcceleratorKey="Control R" AutomationProperties.AutomationId="RestartGame" AutomationProperties.Name="xxx" Click="RestartWithPrompt" x:Uid="ActionRestartGame" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Grid.Column="2">
+                    <Button Style="{StaticResource HelpAppBarButtonStyle}" AutomationProperties.AcceleratorKey="F1" AutomationProperties.Name="xxx" Click="ShowGameHelp" x:Uid="GameHelp" />
+                    <Button Style="{StaticResource SettingsAppBarButtonStyle}" AutomationProperties.AcceleratorKey="Control D" AutomationProperties.AutomationId="Difficulty" AutomationProperties.Name="xxx" Click="GameDifficultyShow" x:Uid="Difficulty" />
+                    <Button Style="{StaticResource AddAppBarButtonStyle}"  AutomationProperties.AcceleratorKey="Control N" AutomationProperties.AutomationId="NewGame" AutomationProperties.Name="xxx" Click="NewGameWithPrompt" x:Uid="ActionNewGame" />
+                </StackPanel>
+            </Grid>
+
+        </AppBar>
+        
+    </Page.BottomAppBar>
+
+    <!--
+        La grille sert de panneau racine à la page, permettant de définir deux lignes :
+        * La ligne 0 qui contient le bouton Précédent et le titre de la page
+        * La ligne 1 qui contient le reste de la page
+    -->
+    <Grid Style="{StaticResource LayoutRootStyle}">
+
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140" x:Name="Col0" />
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100" x:Name="Col2"/>
+        </Grid.ColumnDefinitions>
+        
+        <!--
+            Le reste de la page n'est constitué que d'un grand FlipView affichant les détails
+            d'un élément à la fois, et permettant à l'utilisateur de parcourir tous les éléments d'un groupe
+            donné
+        -->
+
+        <!-- Bouton Précédent et titre de la page -->
+        <Button x:Name="backButton" AutomationProperties.AcceleratorKey="Alt Left" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}" Margin="36,36,36,36" VerticalAlignment="Top" />
+
+        <!--<Rectangle x:Name="d2dRectangle"
+                   Fill="White" 
+                   Grid.Row="0" 
+                   Grid.Column="1" />-->
+
+        <local:GameSurfaceControl x:Name="d2dRectangle" Grid.Row="0" Grid.Column="1" />
+        
+        <Grid Grid.Column="2" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="90" />
+                <RowDefinition Height="90" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Button Style="{StaticResource UndoAppBarButtonStyle}" AutomationProperties.AcceleratorKey="Control Z" Command="{Binding Controller.UndoCommand}" Grid.Row="0" x:Uid="Undo" />
+            <Button Style="{StaticResource RedoAppBarButtonStyle}" AutomationProperties.AcceleratorKey="Control Y" Command="{Binding Controller.RedoCommand}" Grid.Row="1" x:Uid="Redo" />
+
+        </Grid>
+        
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Les états visuels reflètent l'état d'affichage de l'application -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- Le bouton Précédent respecte la convention de marge étroite de 100 pixels pour le mode Portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                    </Storyboard>
+                </VisualState>
+
+                <!-- Le bouton Précédent et le titre ont un style différent lorsque l'état d'affichage a la valeur Snapped -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+                        <!--<ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>-->
+
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Col0" Storyboard.TargetProperty="Width">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="Col2" Storyboard.TargetProperty="Width">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="0"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>

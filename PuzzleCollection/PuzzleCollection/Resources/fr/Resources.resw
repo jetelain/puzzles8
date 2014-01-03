@@ -1,0 +1,439 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>A propos</value>
+  </data>
+  <data name="AboutBased.Text" xml:space="preserve">
+    <value>Basé sur Simon Tatham's Portable Puzzle Collection  (r10035).</value>
+  </data>
+  <data name="AboutFeatureRequest.Text" xml:space="preserve">
+    <value>N'hésitez pas à faire part de vos demandes de fonctionnalités, d'amélioration ou d'ajout de puzzle de la Simon Tatham's Collection sur la page "Issues List" du projet sur codeplex.</value>
+  </data>
+  <data name="AboutOpenSource.Text" xml:space="preserve">
+    <value>Ce logiciel est open source sous la License MIT (mêmes termes que Simon Tatham's Portable Puzzle Collection en dessous).</value>
+  </data>
+  <data name="ActionNewGame.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Nouvelle partie</value>
+  </data>
+  <data name="ActionRestartGame.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="BridgesDescription" xml:space="preserve">
+    <value>Connecter toutes les îles avec un réseau de ponts.</value>
+  </data>
+  <data name="BridgesTitle" xml:space="preserve">
+    <value>Ponts</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="Commands.Text" xml:space="preserve">
+    <value>Commandes</value>
+  </data>
+  <data name="ContactPage.Text" xml:space="preserve">
+    <value>E-mail (puzzles8@outlook.fr)</value>
+  </data>
+  <data name="Difficulty.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Difficulté</value>
+  </data>
+  <data name="Easy" xml:space="preserve">
+    <value>Facile</value>
+  </data>
+  <data name="GameCompletedPrompt" xml:space="preserve">
+    <value>Partie réussie. Que voulez-vous faire ?</value>
+  </data>
+  <data name="GameCompletedTilte" xml:space="preserve">
+    <value>Félicitations !</value>
+  </data>
+  <data name="GameGoal.Text" xml:space="preserve">
+    <value>But du jeu</value>
+  </data>
+  <data name="GameHelp.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Comment jouer ?</value>
+  </data>
+  <data name="Hard" xml:space="preserve">
+    <value>Difficile</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="HelpBridgesCredits" xml:space="preserve">
+    <value>Ce jeu a été contribué dans la collection originale par James Harvey. Le principe du jeu revient à Nikoli (http://www.nikoli.co.jp/puzzles/32/index-e.htm).</value>
+  </data>
+  <data name="HelpBridgesGoal" xml:space="preserve">
+    <value>Vous disposez d'un ensemble d'îles réparties sur l'aire de jeu. Chaque île contient un nombre. Votre but est de relier les îles avec des ponts, de telle sorte que:
+• les ponts sont horizontaux ou verticaux.
+• le nombre de ponts se terminant à une île est égal au nombre écrit dans l’île.
+• Deux ponts peuvent aller entre les deux mêmes îles, mais pas plus de deux peuvent le faire.
+• Aucun pont n’en traverse un autre.
+• Toutes les îles sont reliées entre elles.</value>
+  </data>
+  <data name="HelpBridgesMouseCommands" xml:space="preserve">
+    <value>Pour placer un pont entre deux îles, cliquez avec la souris sur une île et faites glisser la souris vers l'autre. Vous n'avez pas besoin de faire glisser la souris sur tout le chemin vers l'autre île, il vous suffit de déplacer la souris dans la direction de l’autre île jusqu’à ce qu’il n’y ait plus ambiguïté. Faites cela à nouveau quand un pont est déjà présent, cela ajoutera un autre pont parallèle. S'il y a déjà autant de ponts entre les deux îles que le maximum permis par les règles du jeu en cours (soit deux par défaut), la même action va traîner  leur suppression.
+
+Si vous voulez vous rappeler qu’il n’y a certainement pas un point entre deux îles, vous pouvez glisser la souris en appuyant sur le bouton droit de la même manière pour placer un marqueur «non-pont».
+
+Si vous pensez que vous avez terminé avec une île (vous avez placé tous ses ponts et vous êtes confiants qu'ils sont aux bons endroits), vous pouvez marquer l'île comme terminée par un clic gauche dessus. Cela la mettra en évidence et tous les ponts qui y sont connectés, et vous serez empêché de modifier accidentellement l'un de ces ponts par la suite. Faites un clic gauche à nouveau sur une île en surbrillance pour enlever le marqueur et restaurer votre capacité à modifier les ponts.</value>
+  </data>
+  <data name="HelpBridgesTouchCommands" xml:space="preserve">
+    <value>Pour placer un pont entre deux îles, appuyer sur une île et faites glisser votre doigt vers l'autre. Vous n'avez pas besoin de glisser votre doigt sur tout le chemin vers l'autre île, il vous suffit de déplacer le doigt dans la direction de l’autre île jusqu’à ce qu’il n’y ait plus ambiguïté. Faites cela à nouveau quand un pont est déjà présent, cela ajoutera un autre pont parallèle. S'il y a déjà autant de ponts entre les deux îles que le maximum permis par les règles du jeu en cours (soit deux par défaut), la même action va traîner  leur suppression.
+
+Si vous pensez que vous avez terminé avec une île (vous avez placé tous ses ponts et vous êtes confiants qu'ils sont aux bons endroits), vous pouvez marquer l'île comme terminée en tapant dessus. Cela la mettra en évidence et tous les ponts qui y sont connectés, et vous serez empêché de modifier accidentellement l'un de ces ponts par la suite. Taper de nouveau sur une île en surbrillance pour enlever le marqueur et restaurer votre capacité à modifier les ponts.</value>
+  </data>
+  <data name="HelpCommands.Text" xml:space="preserve">
+    <value>Commandes générales</value>
+  </data>
+  <data name="HelpCommandsAppBar.Text" xml:space="preserve">
+    <value>Dans la barre d'application (pour l'afficher, avec une souri, faite un clic droit en dehors de la surface de jeu, ou avec un écran tactile, effleurer depuis le bas de l'écran), vous pouvez redémarrer le jeu (annuler toutes vos actions), changer la difficulté/taille, et démarrer une nouvelle partie.</value>
+  </data>
+  <data name="HelpCommandsIntro.Text" xml:space="preserve">
+    <value>Tous les jeux ont les mêmes boutons de commande.</value>
+  </data>
+  <data name="HelpCommandsUndoRedo.Text" xml:space="preserve">
+    <value>Vous pouvez annuler (ou rétablir) votre dernière action avec le bouton annuler (ou établir) à la droite de la surface de jeu.</value>
+  </data>
+  <data name="HelpCredits.Text" xml:space="preserve">
+    <value>A propos</value>
+  </data>
+  <data name="HelpGamesList.Text" xml:space="preserve">
+    <value>Aide des jeux</value>
+  </data>
+  <data name="HelpHomePage.Text" xml:space="preserve">
+    <value>Pour commencer une partie, cliquer sur un jeu sur le premier écran.</value>
+  </data>
+  <data name="HelpLightupCredits" xml:space="preserve">
+    <value>Ce jeu a été contribué dans la collection originale par James Harvey. Le principe du jeu revient à Nikoli (http://www.nikoli.co.jp/puzzles/32/index-e.htm).</value>
+  </data>
+  <data name="HelpLightupGoal" xml:space="preserve">
+    <value>Vous avez une grille de carrés. Certains sont remplis de noir, quelques-uns des carrés noirs ont un numéro. Votre but est «d'allumer» toutes les cases vides en plaçant des ampoules dans certaines d'entre eux. Chaque ampoule illumine la case; plus toutes les cases à l'horizontale et à la verticale, sauf si un carré noir bloque le chemin.
+
+Pour gagner le jeu, vous devez remplir les conditions suivantes:
+• Toutes les cases non-noires sont allumées.
+• Aucune lumière n'est éclairée par une autre lumière.
+• Tous les carrés noirs ayant un numéro ont exactement ce nombre de lumières à leur proximité (dans les quatre cases dessus, dessous et sur ​​les côtés).
+
+Les carrés noirs n'ayant pas de numéro peuvent avoir n'importe quel nombre d'ampoules adjacentes à eux.</value>
+  </data>
+  <data name="HelpLightupMouseCommands" xml:space="preserve">
+    <value>Un clic gauche sur une case non-noire fera basculer la présence d'une ampoule. Un clic droit sur ​​une case non-noire permet de basculer la présence  d'une marque pour aider à résoudre, par exemple, elle peut être utilisée pour mettre en évidence les cases qui ne peuvent pas contenir d'ampoule.
+Vous ne pouvez pas placer une ampoule dans un case marquée, ni placer une marque dans une case contenant une ampoule.</value>
+  </data>
+  <data name="HelpLightupTouchCommands" xml:space="preserve">
+    <value>Appuyez sur une case non noire pour placer une ampoule ou pour marquer un carré. Le premier appui place une ampoule, le deuxième marque le carré, le troisième efface la case. Les marques peuvent être utilisées pour mettre en évidence les carrés qui ne peuvent pas contenir d'ampoule.</value>
+  </data>
+  <data name="HelpMapCredits" xml:space="preserve">
+    <value>Jeu par Simon Tatham. Le concept d'un puzzle de quatre couleurs a été suggéré par Owen Dunn, le crédit doit aussi aller à Nikoli et Verity Allan pour avoir inspiré le train de pensées qui a conduit à réaliser que la suggestion d'Owen était un puzzle viable. Remerciements également à Gareth Taylor pour ses nombreuses suggestions détaillées.</value>
+  </data>
+  <data name="HelpMapGoal" xml:space="preserve">
+    <value>On vous donne une carte composée d'un certain nombre de régions. Votre tâche est de colorer chaque région à l'aide d'une des quatre couleurs fournies, de telle sorte que deux régions partageant une frontière n'ont pas la même couleur. Vous disposez de certaines régions déjà colorés, suffisantes pour faire que la solution soit unique.
+
+Seules les régions qui partagent une longueur de frontière doivent être de couleurs différentes. Deux régions qui se touchent en un seul point (i.e. sont séparées diagonalement) peuvent être de la même couleur.</value>
+  </data>
+  <data name="HelpMapMouseCommands" xml:space="preserve">
+    <value>Pour colorer une région, cliquez sur le bouton gauche de la souris sur une région existante de la couleur désirée et faites glisser cette couleur dans la nouvelle région.
+
+Si vous devez effacer une région, vous pouvez faire glisser d'une zone vide, ou à partir de l'extérieur de la carte s'il n'y a plus de régions vides.
+
+Le glissement d'une couleur à l'aide du bouton droit de la souris permet de mettre une couleur en pointillés dans une région, vous pouvez utiliser cela comme une note à vous-même lorsque que vous pensez que la région pourrait être cette couleur. Une région peut contenir en pointillés plusieurs couleurs à la fois. (Ceci est souvent utile dans les niveaux de difficulté élevés).</value>
+  </data>
+  <data name="HelpMapTouchCommands" xml:space="preserve">
+    <value>Pour colorer une région, appuyer sur une région existante de la couleur souhaitée et faites glisser cette couleur dans la nouvelle région.
+
+Si vous devez effacer une région, vous pouvez faire glisser d'une zone vide,  ou à partir de l'extérieur de la carte s'il n'y a plus de régions vides.</value>
+  </data>
+  <data name="HelpMouseCommands.Text" xml:space="preserve">
+    <value>Jouer avec une souris</value>
+  </data>
+  <data name="HelpNetCredits" xml:space="preserve">
+    <value>Jeu par Simon Tatham. Vu pour la première fois sous forme d'un jeu flash FreeNet (http://www.jurjans.lv/stuff/net/FreeNet.htm), écrit par Pavils Jurjans.</value>
+  </data>
+  <data name="HelpNetGoal" xml:space="preserve">
+    <value>L'ordinateur établit un réseau en reliant les carrés dans une grille depuis le centre, puis mélange le réseau en faisant tourner chaque tuile de façon aléatoire. Votre travail est de faire tourner chaque tuile pour remettre tout cela en place. La solution retenue sera un réseau entièrement connecté, sans boucles fermées. Comme aide visuelle, toutes les tuiles qui sont reliés à la tuile centrale sont mises en évidence.</value>
+  </data>
+  <data name="HelpNetMouseCommands" xml:space="preserve">
+    <value>Faites un clic gauche sur une tuile pour la faire tourner dans le sens antihoraire. Faites un clic droit sur ​​une tuile pour la faire tourner dans le sens horaire.
+Si vous êtes sûr d'une orientation de la tuile, vous pouvez un clic milieu, ou maintenez la touche Maj enfoncée tout en cliquant avec n'importe quel bouton, pour verrouiller afin de ne pas accidentellement la tourner. Répétez l'opération pour la déverrouiller.</value>
+  </data>
+  <data name="HelpNetTouchCommands" xml:space="preserve">
+    <value>Appuyez sur une tuile pour la tourner dans le sens antihoraire.</value>
+  </data>
+  <data name="HelpPatternCredits" xml:space="preserve">
+    <value>Jeu par Simon Tatham.</value>
+  </data>
+  <data name="HelpPatternGoal" xml:space="preserve">
+    <value>Vous avez une grille de carrés, qui doivent tous être remplis en noir ou en blanc. A côté de chaque ligne de la grille sont indiquées les longueurs des séries de carrés noirs de la ligne, au-dessus de chaque colonne sont énumérées les longueurs des séries de carrés noirs de la colonne. Votre but est de remplir toute la grille avec des carrés noirs et des carrés blancs.</value>
+  </data>
+  <data name="HelpPatternMouseCommands" xml:space="preserve">
+    <value>Faites un clic gauche sur un carré pour le colorer en noir. Faites un clic droit pour le colorer en blanc. Si vous faites une erreur, vous pouvez faire un click milieu, ou maintenez la touche Maj enfoncée tout en cliquant avec n'importe quelle bouton, pour colorer le carré en gris (qui signifie «indécis»). Vous pouvez cliquer et faire glisser avec le bouton gauche ou droit de la souris pour colorer une ligne verticale ou horizontale de carrés en noirs ou en blancs (respectivement). Si vous cliquez et glissez avec le bouton du milieu, ou avec la touche Shift enfoncée, vous pouvez colorer toute un rectangle de carrés en gris.</value>
+  </data>
+  <data name="HelpPatternTouchCommands" xml:space="preserve">
+    <value>Tapez sur un carré pour changer sa couleur. Le premier touché le colorera en noir, le deuxième touché le colorera en blanc, le troisième touché le colorera en gris (qui signifie «indécis»).</value>
+  </data>
+  <data name="HelpSameGameCredits" xml:space="preserve">
+    <value>Ce jeu a été contribué dans la collection originale par James Harvey.</value>
+  </data>
+  <data name="HelpSameGameGoal" xml:space="preserve">
+    <value>Vous avez une grille de carrés colorés, que vous avez à effacer en mettant en évidence les régions de plus d'un carré de couleur. Plus la région que vous effacez est grande, plus vous obtiendrez de points. Vous devez effacer tous les carrés de la grille pour gagner. Si vous vous retrouvez avec que des carrés simples (ie, il n'y a pas de régions effaçables) vous perdez. L’effacement d'une région entraîne le reste de la grille : les carrés qui sont suspendus vont tomber (en premier), puis les colonnes vides sont remplies depuis la droite.</value>
+  </data>
+  <data name="HelpSameGameMouseCommands" xml:space="preserve">
+    <value>Si vous faites un clic gauche sur une région non sélectionnée, elle devient sélectionnée (éventuellement efface la sélection en cours). Si vous faites un clic gauche sur la région sélectionnée, elle sera effacée. Si vous faites un clic droit sur la zone sélectionnée, elle sera désélectionnée.</value>
+  </data>
+  <data name="HelpSameGameTouchCommands" xml:space="preserve">
+    <value>Taper sur une région non sélectionnée, elle devient sélectionnée (éventuellement efface la sélection en cours). Taper sur la région sélectionnée pour l'effacer.</value>
+  </data>
+  <data name="HelpSignPostCredits" xml:space="preserve">
+    <value>Ce jeu a été contribué dans la collection originale par James Harvey. Le principe du jeu reviens à Janko (http://janko.at/Raetsel/Pfeilpfad/index.htm), qui l'a appelé ‘Pfeilpfad’ (‘chemin de flèches’).</value>
+  </data>
+  <data name="HelpSignPostGoal" xml:space="preserve">
+    <value>Vous avez une grille de carrés, chaque carré (sauf le dernier) contient une flèche, et quelques carrés contiennent également des numéros. Votre travail consiste à relier les carrés pour former une liste de numéros continue à partir de 1 et lié dans le sens des flèches - la flèche dans le carré avec le numéro 1 pointera vers le carré contenant le numéro 2, qui pointera le carré contenant le numéro 3, etc. Chaque carré peut être à n'importe quelle distance du précédent, tant qu'il se trouve quelque part dans la direction de la flèche. Par convention, les premier et dernier numéros sont affichés, un ou plusieurs numéros intermédiaires peuvent également apparaître au début.
+
+Si vous connecter ensemble deux carrés et que l'un d'eux a déjà un numéro, le nombre approprié apparaîtra dans l'autre carré. Si vous connectez deux carrés non numérotés, ils seront remplis d’étiquettes algébriques temporaires: ils seront étiquetés «a» et «a+1», puis « b » et « b +1 », et ainsi de suite. Connecter davantage de carrés sur les extrémités d'une telle chaîne va les amener tous à être étiquetés avec la même lettre.
+
+La flèche dans chaque carré est au début noire, et deviens grise une fois que vous vous connectez la place à son successeur. En outre, chaque carré qui a besoin d'un prédécesseur a un petit point dans le coin inférieur gauche, qui disparaît une fois que vous le liez à un autre carré. Donc, votre objectif est toujours de connecter un carré avec une flèche noire sur un carré avec un point.</value>
+  </data>
+  <data name="HelpSignPostMouseCommands" xml:space="preserve">
+    <value>Pour jouer à Signpost, vous connectez les carrés ensembles en faisant glisser un carré à l'autre, ce qui indique qu'ils sont adjacents dans la séquence. Faites glisser avec le bouton gauche d’un carré à son successeur, ou avec le bouton droit d’un carré à son prédécesseur. Lorsque vous faites un clic gauche ou un clic droit dans un carré, les carrés possibles aux quels vous pouvez le connecter s'affichent. Pour supprimer tous les liens d'un carré donné (entrants et sortants), glisser avec le bouton gauche hors de la grille. Pour supprimer toute une chaîne faites glisser avec le bouton droit n'importe quel carré de la chaîne hors de la grille.</value>
+  </data>
+  <data name="HelpSignPostTouchCommands" xml:space="preserve">
+    <value>Pour jouer Signpost, vous connectez les carrés ensembles en faisant glisser un carré à l'autre, ce qui indique qu'ils sont adjacents dans la séquence. Faites glisser un carré à son successeur, ou maintenez quelques secondes et faites glisser un carré à son prédécesseur. Lorsque vous faites glisser un carré, les carrés possibles aux quels vous pouvez le connecter s'affichent. Pour supprimer tous les liens d'un carré donné (entrants et sortants), faites-le glisser hors de la grille. Pour supprimer toute une chaîne, maintenez quelques secondes et faites glisser n'importe quel carré de la chaîne hors de la grille.</value>
+  </data>
+  <data name="HelpSlantCredits" xml:space="preserve">
+    <value>Jeu par Simon Tatham. Le principe du jeu revient à Nikoli (http://www.nikoli.co.jp/puzzles/39/index.htm ; en Japonais)</value>
+  </data>
+  <data name="HelpSlantGoal" xml:space="preserve">
+    <value>Vous avez une grille de carrés. Votre but est de tracer une ligne diagonale à travers chaque carré, et de choisir de quelle manière chaque ligne est inclinée de sorte à ce que les conditions suivantes sont remplies:
+• les lignes diagonales ne doivent jamais former une boucle.
+• Tout point avec un nombre encerclé a précisément ce nombre de lignes connecté à lui. (Ainsi, un 4 est le centre d'une croix, alors que le zéro est le centre d’une partie d’un losange, car un zéro ne peut jamais apparaître dans le milieu de la grille parce que cela provoquerait immédiatement une boucle.)</value>
+  </data>
+  <data name="HelpSlantMouseCommands" xml:space="preserve">
+    <value>Un clic gauche dans un carré blanc placera un \ dedans (une ligne penchant vers la gauche, c’est-à-dire une ligne de l'angle supérieur gauche du carré jusqu’en bas à droite). Un clic droit sur une carré vide placera un / en elle (une ligne penchant vers la droite, allant du haut à droite en bas à gauche). Continuez à cliquer sur un des deux boutons pour alterner entre les trois contenus des carrés possibles. Ainsi, si vous cliquez-gauche à plusieurs reprises dans un carré blanc, il va changer de vide, à \ puis à  /  et finalement à vide, et si vous cliquez à droite à plusieurs reprises la place passera de blanc à /, à \, puid retour à vide. (Par conséquent, vous pouvez jouer le jeu entièrement avec un seul bouton si vous le souhaitez.)</value>
+  </data>
+  <data name="HelpSlantTouchCommands" xml:space="preserve">
+    <value>Appuyez sur un carré vide pour placer un \ dedans (ligne allant du coin supérieur gauche du carré jusqu’en bas à droite), appuyez à nouveau sur le carré pour placer un / dedans (ligne allant du haut à droite jusqu’en bas à gauche), appuyez un troisième fois pour remettre le carré à blanc.</value>
+  </data>
+  <data name="HelpSource.Text" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="HelpSupport.Text" xml:space="preserve">
+    <value>Support / Suggestion d'amélioration</value>
+  </data>
+  <data name="HelpSupportText.Text" xml:space="preserve">
+    <value>Si vous vous rencontrez un problème avec cette collection de jeux, ou si vous avez une suggestion, contactez moi par e-mail, ou ajouter directement un problème sur la page du projet.</value>
+  </data>
+  <data name="HelpTouchCommands.Text" xml:space="preserve">
+    <value>Jouer sur un écran tactile</value>
+  </data>
+  <data name="HelpUntangleCredits" xml:space="preserve">
+    <value>Jeu par Simon Tatham. Vu sous la forme d'un jeu Flash appelé Planarity (http://home.cwru.edu/~jnt5/Planarity), écrit par John Tantalo.</value>
+  </data>
+  <data name="HelpUntangleGoal" xml:space="preserve">
+    <value>Vous avez un certain nombre de points, dont certains ont des lignes tracées entre eux. Vous pouvez déplacer les points librement, votre objectif est de positionner les points de sorte à ce qu'aucune ligne n’en croise une autre.</value>
+  </data>
+  <data name="HelpUntangleMouseCommands" xml:space="preserve">
+    <value>Pour déplacer un point, cliquez dessus avec le bouton gauche de la souris et faites-le glisser jusqu'à une nouvelle position.</value>
+  </data>
+  <data name="HelpUntangleTouchCommands" xml:space="preserve">
+    <value>Pour déplacer un point, appuyez dessus et faites-le glisser jusqu'à une nouvelle position.</value>
+  </data>
+  <data name="IssuesPage.Text" xml:space="preserve">
+    <value>Liste des problèmes (codeplex.com; anglais uniquement)</value>
+  </data>
+  <data name="LightupDescription" xml:space="preserve">
+    <value>Placer des lumières pour éclairer tous les carrés.</value>
+  </data>
+  <data name="LightupTitle" xml:space="preserve">
+    <value>Eclairer</value>
+  </data>
+  <data name="MapDescription" xml:space="preserve">
+    <value>Colorer la carte de manière à ce qu'aucune région adjacente ne soit de même couleur.</value>
+  </data>
+  <data name="MapTitle" xml:space="preserve">
+    <value>Carte</value>
+  </data>
+  <data name="NetDescription" xml:space="preserve">
+    <value>Tourner chaque case pour réassembler le réseau.</value>
+  </data>
+  <data name="NetTitle" xml:space="preserve">
+    <value>Réseau</value>
+  </data>
+  <data name="NewGame" xml:space="preserve">
+    <value>Nouvelle partie</value>
+  </data>
+  <data name="NewGamePrompt" xml:space="preserve">
+    <value>La partie courante sera perdue, êtes-vous sûre ?</value>
+  </data>
+  <data name="Normal" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="PatternDescription" xml:space="preserve">
+    <value>Reconstituer le motif à partir des longueurs des segments de carrés noirs.</value>
+  </data>
+  <data name="PatternTitle" xml:space="preserve">
+    <value>Motif</value>
+  </data>
+  <data name="Redo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Rétablir</value>
+  </data>
+  <data name="RestartGame" xml:space="preserve">
+    <value>Recommencer</value>
+  </data>
+  <data name="RestartPrompt" xml:space="preserve">
+    <value>Votre progression sera perdue. Vous ne pourrez pas annuler cette action, êtes-vous sûre ?</value>
+  </data>
+  <data name="SameGameDescription" xml:space="preserve">
+    <value>Vider la grille en enlevant les groupes de carrés de même couleur.</value>
+  </data>
+  <data name="SameGameTitle" xml:space="preserve">
+    <value>Same Game</value>
+  </data>
+  <data name="SignPostDescription" xml:space="preserve">
+    <value>Connecter les carrés avec un chemin suivant les flèches.</value>
+  </data>
+  <data name="SignPostTitle" xml:space="preserve">
+    <value>Panneaux</value>
+  </data>
+  <data name="SlantDescription" xml:space="preserve">
+    <value>Dessiner un labyrinthe de lignes obliques qui correspond aux indices.</value>
+  </data>
+  <data name="SlantTitle" xml:space="preserve">
+    <value>Oblique</value>
+  </data>
+  <data name="Tricky" xml:space="preserve">
+    <value>Délicat</value>
+  </data>
+  <data name="Undo.[using:Windows.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Unknown" xml:space="preserve">
+    <value>Inconnu</value>
+  </data>
+  <data name="Unreasonable" xml:space="preserve">
+    <value>Déraisonnable</value>
+  </data>
+  <data name="UntangleDescription" xml:space="preserve">
+    <value>Repositionner les points de sorte que les lignes ne se croisent pas.</value>
+  </data>
+  <data name="UntangleTitle" xml:space="preserve">
+    <value>Démêler</value>
+  </data>
+</root>

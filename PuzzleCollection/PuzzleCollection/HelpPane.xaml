@@ -1,0 +1,91 @@
+﻿<UserControl
+    x:Class="PuzzleCollection.HelpPane"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PuzzleCollection"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="1200"
+    d:DesignWidth="600" Background="White">
+
+    <UserControl.Resources>
+        <CollectionViewSource
+            x:Name="games"
+            Source="{Binding Games}"/>
+    </UserControl.Resources>
+    
+    <Grid>
+        <RichTextBlock FontSize="14" Foreground="Black"
+          Style="{StaticResource BasicRichTextStyle}" IsTextSelectionEnabled="False" Margin="0,0,0,15">
+
+            <Paragraph Margin="0,0,0,15">
+                <Run x:Uid="HelpHomePage">HelpHomePage</Run>
+            </Paragraph>
+
+            <Paragraph Margin="0,0,0,15">
+                <Bold>
+                    <Run x:Uid="HelpCommands">HelpCommands</Run></Bold>
+            </Paragraph>
+
+            <Paragraph Margin="0,0,0,15">
+                <Run x:Uid="HelpCommandsIntro">HelpCommandsIntro</Run>
+            </Paragraph>
+            <Paragraph Margin="0,0,0,15">
+                <Run x:Uid="HelpCommandsUndoRedo">HelpCommandsUndoRedo</Run>
+            </Paragraph>
+            <Paragraph Margin="0,0,0,15">
+                <Run x:Uid="HelpCommandsAppBar">HelpCommandsAppBar</Run>
+            </Paragraph>
+
+            <Paragraph Margin="0,0,0,15">
+                <Bold>
+                    <Run x:Uid="HelpSupport">HelpSupport</Run></Bold>
+            </Paragraph>
+
+            <Paragraph Margin="0,0,0,15">
+                <Run x:Uid="HelpSupportText">HelpSupportText</Run>
+            </Paragraph>
+
+            <Paragraph Margin="0,0,0,15">
+                <InlineUIContainer>
+                    <StackPanel>
+                        <HyperlinkButton NavigateUri="mailto:puzzles8@outlook.fr">
+                            <TextBlock x:Uid="ContactPage">ContactPage</TextBlock></HyperlinkButton>
+                        <HyperlinkButton NavigateUri="https://puzzles8.codeplex.com/workitem/list/basic">
+                            <TextBlock x:Uid="IssuesPage">IssuesPage</TextBlock></HyperlinkButton>
+                    </StackPanel>
+                </InlineUIContainer>
+            </Paragraph>
+            
+            <Paragraph Margin="0,0,0,15">
+                <Bold>
+                    <Run x:Uid="HelpGamesList">HelpGamesList</Run></Bold>
+            </Paragraph>
+            
+            <Paragraph Margin="0,0,0,15">
+                <InlineUIContainer>
+                    <ListView
+                        ItemsSource="{Binding Source={StaticResource games}}"
+                        IsItemClickEnabled="True" ItemClick="ListView_ItemClick" 
+                        SelectionMode="None"
+                        IsSwipeEnabled="False"
+                        ItemTemplate="{StaticResource Help80ItemTemplate}">
+
+                        <ListView.ItemContainerTransitions>
+                            <TransitionCollection/>
+                        </ListView.ItemContainerTransitions>
+                        <ListView.Template>
+                            <ControlTemplate>
+                                <ItemsPresenter></ItemsPresenter>
+                            </ControlTemplate>
+                        </ListView.Template>
+
+
+                    </ListView>
+                </InlineUIContainer>
+            </Paragraph>
+
+        </RichTextBlock>
+    </Grid>
+</UserControl>
